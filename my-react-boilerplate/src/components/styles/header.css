@@ -1,0 +1,17 @@
+/* In your CSS file for the Header component */
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px; /* Add padding for spacing */
+    border-bottom: 2px solid #333; /* Add a border color to the bottom */
+  }
+  
+  img {
+    max-width: 300px; /* Set the maximum width to your desired size */
+    height: auto;
+    margin-left: 70px; /* Increase the right margin for shifting */
+    margin-bottom: 20px;
+  }
+  

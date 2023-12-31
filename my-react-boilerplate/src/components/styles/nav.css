@@ -1,0 +1,35 @@
+/* In your CSS file for the Nav component */
+
+nav {
+    margin-left: 350px; /* Push the navigation to the right */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 25px; /* Adjust the right margin between list items */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000; /* Set text color for links */
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size as needed */
+    position: relative;
+  }
+  
+  a:hover::after {
+    content: ""; /* Add an underline on hover */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the distance of the underline from the text */
+    width: 100%;
+    height: 2px;
+    background-color: #000000; /* Set the color of the underline on hover */
+  }
+  

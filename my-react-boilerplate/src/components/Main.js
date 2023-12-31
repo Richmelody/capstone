@@ -2,6 +2,10 @@
 
 import React from "react";
 import gourmet from "./assets/gourmet.jpg";
+import catsalad from "./assets/cat-csalad.jpg";
+import bruschetta1 from "./assets/bruschetta1.jpg";
+import creme from "./assets/creme.jpg";
+import "./styles/main.css";
 
 const Main = () => {
   return (
@@ -23,7 +27,7 @@ const Main = () => {
         <button>Online Menu</button>
         <div className="specials-images-container">
           <div className="specials-image">
-            <img src="your-image-path-1.jpg" alt="Special 1" />
+            <img src={catsalad} alt="Special 1" />
             <div>
               <h1>Bold Heading 1</h1>
               <p>Description for Special 1</p>
@@ -32,7 +36,7 @@ const Main = () => {
           </div>
 
           <div className="specials-image">
-            <img src="your-image-path-2.jpg" alt="Special 2" />
+            <img src={bruschetta1} alt="Special 2" />
             <div>
               <h1>Bold Heading 1</h1>
               <p>Description for Special 2</p>
@@ -41,7 +45,7 @@ const Main = () => {
           </div>
 
           <div className="specials-image">
-            <img src="your-image-path-3.jpg" alt="Special 3" />
+            <img src={creme} alt="Special 3" />
             <div>
               <h1>Bold Heading 1</h1>
               <p>Description for Special 3</p>

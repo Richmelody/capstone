@@ -1,35 +1,74 @@
-/* In your CSS file for Main.js or a separate stylesheet */
-
-/* Styling for the main container */
-.main-container {
-  max-width: 1200px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the content horizontally */
+.hero-section-background {
+  background-color: #495e57;
+  width: 100%;
 }
 
-/* Styling for the hero section */
-.hero-section {
-  position: relative;
+.hero-section-container {
   display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+  color: #fff;
+}
+
+/* .section-left {
+  width: 100%;
+} */
+
+.section-left h1 {
+  color: #f4ce14;
+  margin-top: 20px;
+  margin-bottom: -1rem; /* Adjust this value to control the space between h1 and h2 */
+}
+
+.section-left h1,
+.section-left h2 {
+  line-height: 0.8;
+  font-size: 4rem;
+}
+
+.section-left p {
+  width: 35%;
+  margin: 20px 0;
+  font-size: large;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 16pt;
+  font-weight: 600;
+  background-color: #f4ce14;
+  color: #333333;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.section-right {
+  width: 400px;
+  position: relative;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 50px; /* Adjust padding as needed */
-  background-color: #f0f0f0; /* Background color for the rectangle */
+  height: 400px;
+  position: relative;
 }
 
-/* Styling for the text content in the hero section */
-.hero-section h1,
-.hero-section h2,
-.hero-section p {
-  margin-right: 50px; /* Adjust spacing between text and image */
-  color: #333; /* Text color */
-}
-
-/* Styling for the hero image */
-.hero-section img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%; /* Make the image take the full width of its container */
-  height: 100%; /* Make the image take the full height of its container */
-  object-fit: cover; /* Ensure the image covers the container */
-  z-index: -1; /* Move the image to the background */
+.image-box img {
+  max-width: 700%; /* Adjust this value as needed */
+  height: 150%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 200px; /* Adjust this value as needed */
+  margin-right: 90px;
 }

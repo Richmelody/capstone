@@ -5,20 +5,35 @@ import gourmet from "./assets/gourmet.jpg";
 import catsalad from "./assets/cat-csalad.jpg";
 import bruschetta1 from "./assets/bruschetta1.jpg";
 import creme from "./assets/creme.jpg";
+// import { NavLink } from "react-router-dom";
 import "./styles/main.css";
 
 const Main = () => {
   return (
     <div className="main-container">
       {/* Hero Section */}
-      <div className="hero-section">
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-        <p>
-          We are a family-owned Mediterranean restaurant, focused on traditional
-          recipes served with a modern twist.
-        </p>
-        <img src={gourmet} alt="Hero Section Image" />
+      <div className="hero-section-background">
+        <div className="hero-section-container">
+          <div className="section-left">
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+            <p>
+              We are a family-owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </p>
+            <button
+              className="btn"
+              onClick={() => (window.location.href = "/reservations")}
+            >
+              Reserve a Table
+            </button>
+          </div>
+          <div className="section-right">
+            <div className="image-box">
+              <img src={gourmet} alt="Serving delicious dish" />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Specials Section */}

@@ -38,8 +38,10 @@ const Main = () => {
 
       {/* Specials Section */}
       <div className="specials-section">
-        <h1>Specials</h1>
-        <button>Online Menu</button>
+        <div>
+          <h1>Specials</h1>
+          <button>Online Menu</button>
+        </div>
         <div className="specials-images-container">
           <div className="specials-image">
             <img src={catsalad} alt="Special 1" />

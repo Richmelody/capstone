@@ -72,3 +72,181 @@
   margin-top: 200px; /* Adjust this value as needed */
   margin-right: 90px;
 }
+
+.specials-section {
+  border-radius: 10px; /* Softened edges */
+  padding: 200px; /* Spacing for content */
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Vertically center content */
+}
+
+.specials-section > div:first-child {
+  /* Target the first div */
+  display: flex; /* Horizontal layout for header and button */
+  justify-content: space-between; /* Align elements on opposite sides */
+  align-items: center; /* Vertically center elements */
+  margin-bottom: 50px; /* Space between sections */
+}
+
+h1 {
+  color: #222; /* Darker text for contrast */
+  font-weight: 1000; /* Emphasis */
+  font-size: 50px; /* Larger font for readability */
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16pt;
+  font-weight: 600;
+  background-color: #f4ce14;
+  color: #333333;
+  border-radius: 20px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.specials-images-container {
+  display: flex; /* Container for images */
+  justify-content: space-around; /* Distribute images evenly */
+}
+
+.specials-image {
+  display: flex; /* Horizontal layout for image and text */
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center elements */
+}
+
+/* Hover effect for visual appeal, applied directly to the image */
+.specials-image img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Centered shadow */
+}
+
+.specials-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 10px; /* Spacing below image */
+  margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+.specials-image h1 {
+  color: #222; /* Darker text for contrast */
+  font-size: 18px; /* Larger font for readability */
+  margin-bottom: 5px; /* Tighter spacing */
+  margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+.specials-image p {
+  color: #666; /* Light gray description text */
+  font-size: 14px; /* Smaller font */
+  line-height: 1.5; /* Improved readability */
+  margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+.specials-image h2 {
+  color: #4caf50; /* Green secondary heading */
+  font-size: 16px; /* Emphasis */
+  margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.testimonial-header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.review {
+  width: 300px;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-style: italic;
+  color: #555;
+}
+
+#rating {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* Summary Section Styles */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.about-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about h4 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about h5 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.owners {
+  display: flex;
+}
+
+#chefs,
+#restaurant {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 20px;
+  object-fit: cover;
+}

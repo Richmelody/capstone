@@ -1,0 +1,56 @@
+/* Assuming a container class for the entire footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Style for the logo section */
+.footer-section img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Style for headings in other sections */
+.footer-section h3,
+.nav-section h3,
+.contact-section h3,
+.socials-section h3 {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+/* Style for the list items in other sections */
+.footer-section ul,
+.nav-section ul,
+.contact-section ul,
+.socials-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset default margin */
+  display: flex; /* Display list items horizontally */
+  align-items: center; /* Vertically align list items */
+}
+
+/* Style for content below headings */
+.footer-section ul,
+.nav-section div, /* Assuming the content is wrapped in a div */
+.contact-section ul,
+.socials-section ul {
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for social media links */
+.socials-section ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+.socials-section ul li a:hover {
+  color: #007bff; /* Adjust the hover color as needed */
+}

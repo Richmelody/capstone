@@ -8,13 +8,12 @@ const Footer = () => {
     <div className="footer">
       {/* Logo Section */}
       <div className="section">
-        <h3>Logo</h3>
         <img src={logo} alt="Secondary Logo" />
       </div>
 
       {/* Navigation Section */}
-      <div className="section">
-        <h3>Navigation</h3>
+      <div className="nav">
+        <h2>Navigation</h2>
         <ul>
           <li>
             <a className="a" href="/">
@@ -50,8 +49,8 @@ const Footer = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="section">
-        <h3>Contact</h3>
+      <div className="contact">
+        <h2>Contact</h2>
         <ul>
           <li>
             Phone Number: <span>Placeholder</span>
@@ -66,8 +65,8 @@ const Footer = () => {
       </div>
 
       {/* Social Media Section */}
-      <div className="section">
-        <h3>Social Media</h3>
+      <div className="socials">
+        <h2>Social Media</h2>
         <ul>
           <li>
             Instagram: <span>Placeholder</span>

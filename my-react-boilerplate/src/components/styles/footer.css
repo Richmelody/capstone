@@ -16,13 +16,25 @@
 .footer img {
   width: 100%;
   margin-left: 10px; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Add margin to shift the image down */
+  padding-top: 85px; /* Add padding to the top to further shift the image down */
 }
 
 @media (max-width: 800px) {
   .footer img {
-    width: 50%;
+    width: 500%;
     margin: 0;
   }
+}
+
+.logo {
+  width: 20%;
+  margin: 1em;
+}
+
+.logo img {
+  width: 100%;
+  margin-bottom: 10px; /* Add margin to shift the image down */
 }
 
 .nav {
@@ -30,6 +42,7 @@
   margin: 1em;
   display: flex;
   flex-direction: column;
+  margin-left: 50px; /* Move to the right */
 }
 
 .nav h3 {
@@ -62,6 +75,7 @@
   margin: 1em;
   display: flex;
   flex-direction: column;
+  margin-right: auto; /* Move to the right */
 }
 
 .contact h3 {
@@ -93,6 +107,7 @@
   margin: 1em;
   display: flex;
   flex-direction: column;
+  margin-left: -10px; /* Move to the right */
 }
 
 .socials h3 {

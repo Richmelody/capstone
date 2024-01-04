@@ -1,5 +1,6 @@
 // Nav.js
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/nav.css";
 
 function Nav() {
@@ -7,22 +8,22 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/products">Menu</a>
+          <Link to="/products">Menu</Link>
         </li>
         <li>
-          <a href="/contact">Reservations</a>
+          <Link to="/contact">Reservations</Link>
         </li>
         <li>
-          <a href="/Order-Online">Order-Online</a>
+          <Link to="/Order-Online">Order-Online</Link>
         </li>
         <li>
-          <a href="/Login">Login</a>
+          <Link to="/Login">Login</Link>
         </li>
       </ul>
     </nav>

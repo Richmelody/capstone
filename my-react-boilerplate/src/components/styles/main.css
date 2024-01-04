@@ -1,6 +1,7 @@
 .hero-section-background {
   background-color: #495e57;
   width: 100%;
+  height: 420px;
 }
 
 .hero-section-container {
@@ -10,6 +11,7 @@
   margin: 0 auto;
   padding: 60px 0;
   color: #fff;
+  padding-bottom: 0px;
 }
 
 /* .section-left {
@@ -18,20 +20,22 @@
 
 .section-left h1 {
   color: #f4ce14;
-  margin-top: 20px;
-  margin-bottom: -1rem; /* Adjust this value to control the space between h1 and h2 */
-}
-
-.section-left h1,
-.section-left h2 {
+  margin-top: 15px;
+  margin-bottom: -1rem;
   line-height: 0.8;
   font-size: 4rem;
+  /* Adjust this value to control the space between h1 and h2 */
+}
+
+.section-left h2 {
+  line-height: 1;
+  font-size: 2rem;
 }
 
 .section-left p {
   width: 35%;
   margin: 20px 0;
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -60,16 +64,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 450px;
   position: relative;
 }
 
 .image-box img {
-  max-width: 700%; /* Adjust this value as needed */
-  height: 150%;
+  max-width: 150%; /* Adjust this value as needed */
+  height: 120%;
   border-radius: 25px;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 200px; /* Adjust this value as needed */
+  margin-top: 45px; /* Adjust this value as needed */
   margin-right: 90px;
 }
 
@@ -136,14 +140,14 @@ button:hover {
 }
 
 .specials-image h1 {
-  color: #222; /* Darker text for contrast */
+  color: #7d3838; /* Darker text for contrast */
   font-size: 18px; /* Larger font for readability */
   margin-bottom: 5px; /* Tighter spacing */
   margin-left: 100px; /* Adjust the left margin as needed */
 }
 
 .specials-image p {
-  color: #666; /* Light gray description text */
+  color: #dedede; /* Light gray description text */
   font-size: 14px; /* Smaller font */
   line-height: 1.5; /* Improved readability */
   margin-left: 100px; /* Adjust the left margin as needed */

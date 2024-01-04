@@ -23,6 +23,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   position: relative;
+  font-family: "karla", "sans-serif";
 }
 
 a:hover::after {

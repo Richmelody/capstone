@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Reservation = () => {
   return (
-    <div>
-      <h1>Reservation</h1>
-    </div>
+    <>
+      <Header />
+      <div>
+        <h1>Reservation</h1>
+      </div>
+    </>
   );
 };
 

@@ -1,16 +1,26 @@
+// App.js
 import React from "react";
-import Header from "./components/Header";
-
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Reservation from "./pages/Reservation";
+// import AboutPage from "./pages/AboutPage";
+// import MenuPage from "./pages/MenuPage";
+// import OrderOnlinePage from "./pages/OrderOnlinePage";
+// import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   return (
-    <>
-      <Header />
-           <Main />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/reservations" element={<Reservation />} />
+        {/* <Route path="/about" element={<AboutPage />} /> */}
+        {/* <Route path="/menu" element={<MenuPage />} /> */}
+        {/* <Route path="/order-online" element={<OrderOnlinePage />} /> */}
+        {/* <Route path="/login" element={<LoginPage />} /> */}
+        {/* Add routes for other pages */}
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,12 +1,12 @@
 // HomePage.js
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import gourmet from "../assets/gourmet.jpg";
-import catsalad from "../assets/cat-csalad.jpg";
-import bruschetta1 from "../assets/bruschetta1.jpg";
-import creme from "../assets/creme.jpg";
-import "../styles/main.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import gourmet from "../components/assets/gourmet.jpg";
+import catsalad from "../components/assets/cat-csalad.jpg";
+import bruschetta1 from "../components/assets/bruschetta1.jpg";
+import creme from "../components/assets/creme.jpg";
+import "../components/styles/main.css";
 
 const HomePage = () => {
   return (

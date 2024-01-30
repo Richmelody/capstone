@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/Bookingform.css";
 
-const BookingForm = ({ availableTimes }) => {
+const Bookingform = ({ availableTimes, updateTimes }) => {
   // State variables
   const [selectedDate, setSelectedDate] = useState("");
   const [numberOfGuests, setNumberOfGuests] = useState(1);
@@ -120,4 +120,4 @@ const BookingForm = ({ availableTimes }) => {
   );
 };
 
-export default BookingForm;
+export default Bookingform;

@@ -1,27 +1,18 @@
 // BookingForm.js
-
 import React, { useState, useEffect } from "react";
 import "./styles/Bookingform.css";
 
-const BookingForm = () => {
+const BookingForm = ({ availableTimes }) => {
   // State variables
   const [selectedDate, setSelectedDate] = useState("");
-  const [selectedTime, setSelectedTime] = useState("17:00");
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [selectedOccasion, setSelectedOccasion] = useState("Birthday");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submittedData, setSubmittedData] = useState(null);
 
-  // State for available times
-  const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-
   // Event handlers
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
-  };
-
-  const handleTimeChange = (event) => {
-    setSelectedTime(event.target.value);
   };
 
   const handleGuestsChange = (event) => {
@@ -36,11 +27,11 @@ const BookingForm = () => {
     event.preventDefault();
 
     // Check if all required fields are filled
-    if (selectedDate !== "" && selectedTime !== "" && numberOfGuests !== "") {
+    if (selectedDate !== "" && numberOfGuests !== "") {
       // Add logic to handle form submission (API call, etc.)
       console.log("Form submitted:", {
         selectedDate,
-        selectedTime,
+        selectedTime: availableTimes, // Use availableTimes directly
         numberOfGuests,
         selectedOccasion,
       });
@@ -51,7 +42,7 @@ const BookingForm = () => {
       // Save submitted data
       setSubmittedData({
         selectedDate,
-        selectedTime,
+        selectedTime: availableTimes, // Use availableTimes directly
         numberOfGuests,
         selectedOccasion,
       });
@@ -65,7 +56,6 @@ const BookingForm = () => {
     // Reset form values only if the form has been submitted
     if (formSubmitted) {
       setSelectedDate("");
-      setSelectedTime("17:00");
       setNumberOfGuests(1);
       setSelectedOccasion("Birthday");
       // Reset formSubmitted to false after resetting the form
@@ -85,7 +75,7 @@ const BookingForm = () => {
         />
 
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time" value={selectedTime} onChange={handleTimeChange}>
+        <select id="res-time" value={availableTimes[0]} onChange={() => {}}>
           {availableTimes.map((time) => (
             <option key={time}>{time}</option>
           ))}
@@ -120,7 +110,7 @@ const BookingForm = () => {
           <p>Form submitted successfully!</p>
           <ul>
             <li>Date: {submittedData.selectedDate}</li>
-            <li>Time: {submittedData.selectedTime}</li>
+            <li>Time: {submittedData.selectedTime.join(", ")}</li>
             <li>Number of guests: {submittedData.numberOfGuests}</li>
             <li>Occasion: {submittedData.selectedOccasion}</li>
           </ul>

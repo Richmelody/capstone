@@ -1,13 +1,14 @@
+// BookingPage.js
 import React from "react";
 import Footer from "../components/Footer";
-import Bookingform from "../components/Bookingform";
+import BookingForm from "../components/Bookingform";
 import Header from "../components/Header";
 
 const BookingPage = () => {
   return (
     <div>
       <Header />
-      <Bookingform />
+      <BookingForm />
       <Footer />
     </div>
   );

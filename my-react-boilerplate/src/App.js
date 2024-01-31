@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Reservation from "./pages/Reservation";
 import BookingPage from "./pages/BookingPage";
-import Bookingform from "./components/Bookingform";
 
 // Reducer function
 const timesReducer = (state, action) => {
@@ -31,8 +30,7 @@ const App = () => {
   // Reducer hook
   const [availableTimes, dispatchTimes] = useReducer(
     timesReducer,
-    [],
-    initializeTimes
+    initializeTimes()
   );
 
   // Function to handle state change
@@ -51,12 +49,10 @@ const App = () => {
         <Route
           path="/BookingPage"
           element={
-            <BookingPage>
-              <Bookingform
-                availableTimes={availableTimes}
-                updateTimes={updateTimes}
-              />
-            </BookingPage>
+            <BookingPage
+              availableTimes={availableTimes}
+              updateTimes={updateTimes}
+            />
           }
         />
       </Routes>

@@ -75,7 +75,11 @@ const Bookingform = ({ availableTimes, updateTimes }) => {
         />
 
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time" value={availableTimes[0]} onChange={() => {}}>
+        <select
+          id="res-time"
+          value={availableTimes.length > 0 ? availableTimes[0] : ""}
+          onChange={() => {}}
+        >
           {availableTimes.map((time) => (
             <option key={time}>{time}</option>
           ))}

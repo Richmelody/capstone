@@ -1,19 +1,16 @@
-// BookingForm.js
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/Bookingform.css";
 
-const Bookingform = ({ availableTimes, updateTimes }) => {
-  // State variables
-  const [selectedDate, setSelectedDate] = useState("");
+const Bookingform = ({
+  selectedDate,
+  onDateChange,
+  availableTimes,
+  updateTimes,
+}) => {
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [selectedOccasion, setSelectedOccasion] = useState("Birthday");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submittedData, setSubmittedData] = useState(null);
-
-  // Event handlers
-  const handleDateChange = (event) => {
-    setSelectedDate(event.target.value);
-  };
 
   const handleGuestsChange = (event) => {
     setNumberOfGuests(event.target.value);
@@ -55,13 +52,13 @@ const Bookingform = ({ availableTimes, updateTimes }) => {
   useEffect(() => {
     // Reset form values only if the form has been submitted
     if (formSubmitted) {
-      setSelectedDate("");
+      onDateChange(""); // Reset the date in the parent component
       setNumberOfGuests(1);
       setSelectedOccasion("Birthday");
       // Reset formSubmitted to false after resetting the form
       setFormSubmitted(false);
     }
-  }, [formSubmitted]);
+  }, [formSubmitted, onDateChange]);
 
   return (
     <div className="booking-container">
@@ -71,7 +68,7 @@ const Bookingform = ({ availableTimes, updateTimes }) => {
           type="date"
           id="res-date"
           value={selectedDate}
-          onChange={handleDateChange}
+          onChange={(e) => onDateChange(e.target.value)}
         />
 
         <label htmlFor="res-time">Choose time</label>

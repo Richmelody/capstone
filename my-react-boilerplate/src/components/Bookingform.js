@@ -6,6 +6,7 @@ const Bookingform = ({
   onDateChange,
   availableTimes,
   updateTimes,
+  onSubmit,
 }) => {
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [selectedOccasion, setSelectedOccasion] = useState("Birthday");
@@ -26,13 +27,12 @@ const Bookingform = ({
     // Check if all required fields are filled
     if (selectedDate !== "" && numberOfGuests !== "") {
       // Add logic to handle form submission (API call, etc.)
-      console.log("Form submitted:", {
-        selectedDate,
-        selectedTime: availableTimes, // Use availableTimes directly
-        numberOfGuests,
-        selectedOccasion,
-      });
-
+      // console.log("Form submitted:", {
+      //   selectedDate,
+      //   selectedTime: availableTimes, // Use availableTimes directly
+      //   numberOfGuests,
+      //   selectedOccasion,
+      // });
       // Set formSubmitted to true
       setFormSubmitted(true);
 
@@ -43,6 +43,8 @@ const Bookingform = ({
         numberOfGuests,
         selectedOccasion,
       });
+
+      // onSubmit([]);
     } else {
       // Display a message below the form with selected values
       alert("Please select all required fields.");
@@ -55,10 +57,15 @@ const Bookingform = ({
       onDateChange(""); // Reset the date in the parent component
       setNumberOfGuests(1);
       setSelectedOccasion("Birthday");
-      // Reset formSubmitted to false after resetting the form
-      setFormSubmitted(false);
+      setFormSubmitted(false); // Reset formSubmitted to false after resetting the form
     }
   }, [formSubmitted, onDateChange]);
+
+  useEffect(() => {
+    if (submittedData) {
+      onSubmit(submittedData);
+    }
+  }, [submittedData]);
 
   return (
     <div className="booking-container">

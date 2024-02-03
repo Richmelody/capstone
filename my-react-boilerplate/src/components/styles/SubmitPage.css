@@ -1,0 +1,28 @@
+/* SubmitPage.css */
+.submit-page-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.submit-page-container h1 {
+  color: #2c3e50;
+}
+
+.submit-page-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submit-page-container li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center; /* Center-align the text */
+}
+
+/* Add any additional styling as needed */

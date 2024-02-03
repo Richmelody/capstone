@@ -1,4 +1,3 @@
-// Nav.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/nav.css";
@@ -8,22 +7,34 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/">About</Link>
+          <Link to="/" className="nav-link">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/">Menu</Link>
+          <Link to="/" className="nav-link">
+            Menu
+          </Link>
         </li>
         <li>
-          <Link to="/Bookingpage">Bookings</Link>
+          <Link to="/Booking" className="nav-link">
+            Bookings
+          </Link>
         </li>
         <li>
-          <Link to="/">Order-Online</Link>
+          <Link to="/" className="nav-link">
+            Order-Online
+          </Link>
         </li>
         <li>
-          <Link to="/">Login</Link>
+          <Link to="/" className="nav-link">
+            Login
+          </Link>
         </li>
       </ul>
     </nav>

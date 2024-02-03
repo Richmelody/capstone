@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from "./assets/logo.jpg"; // Assuming the logo is in the assets folder
 import "./styles/footer.css";
@@ -16,34 +17,34 @@ const Footer = () => {
         <h2>Navigation</h2>
         <ul>
           <li>
-            <a className="a" href="/">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="a" href="/about">
+            <Link to="/" className="nav-link">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="a" href="/menu">
+            <Link to="/" className="nav-link">
               Menu
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="a" href="/reservations">
-              Reservations
-            </a>
+            <Link to="/Bookingpage" className="nav-link">
+              Bookings
+            </Link>
           </li>
           <li>
-            <a className="a" href="/order">
-              Order Online
-            </a>
+            <Link to="/" className="nav-link">
+              Order-Online
+            </Link>
           </li>
           <li>
-            <a className="a" href="/login">
+            <Link to="/" className="nav-link">
               Login
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

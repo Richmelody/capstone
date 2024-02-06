@@ -1,3 +1,57 @@
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero-section-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    padding: 30px 0; /* Adjust padding for smaller screens */
+  }
+
+  .section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+  }
+
+  .section-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; /* Add space between h1 and h2 */
+  }
+
+  .section-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Add space between h2 and p */
+  }
+
+  .section-left p {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add space below the paragraph */
+  }
+
+  .btn {
+    margin-top: 10px; /* Adjust spacing for the button */
+  }
+
+  .section-right {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Add tablet-specific styles here */
+}
+
+/* Larger Screens Styles */
+@media (min-width: 1025px) {
+  /* Add larger screen-specific styles here */
+}
+
+/* Rest of the CSS */
 .hero-section-background {
   background-color: #495e57;
   width: 100%;

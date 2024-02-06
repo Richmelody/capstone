@@ -25,7 +25,7 @@ const HomePage = () => {
               </p>
               <button
                 className="btn"
-                onClick={() => (window.location.href = "/Bookingpage")}
+                onClick={() => (window.location.href = "/Booking")}
               >
                 Reserve a Table
               </button>

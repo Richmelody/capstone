@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 function Header() {
   return (
     <header>
-      {/* Use Link component to make the logo clickable */}
+      
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>

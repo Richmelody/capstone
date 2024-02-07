@@ -163,6 +163,10 @@ button:hover {
   transition: 0.3s;
 }
 
+.specials {
+  position: relative; /* Set position to relative */
+  right: 4%; /* Shift the element 5% to the right */
+}
 .specials-images-container {
   display: flex; /* Container for images */
   justify-content: space-around; /* Distribute images evenly */
@@ -210,8 +214,49 @@ button:hover {
 /* Media Query for Smaller Screens */
 @media (max-width: 1120px) {
   .specials-section {
-    padding: 30px; /* Adjusted padding for smaller screens */
-    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 25px; /* Adjusted padding for smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  h1 {
+    font-size: 32px; /* Reduced font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for spacing below h1 */
+    margin-right: 10px;
+  }
+
+  button {
+    margin-top: 5px; /* Adjusted margin for spacing between h1 and button */
+    margin-right: 10px;
+
+    margin-bottom: 5px; /* Adjusted margin for spacing between button and images */
+  }
+  .specials-images-container {
+    padding: 0; /* Remove padding for smaller screens */
+    display: flex; /* Display images in a flex container */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center images horizontally */
+    width: 100%; /* Ensure images container takes full width */
+  }
+
+  .specials-image {
+    margin: 20px; /* Space around each image */
+    flex: 1 1 45%; /* Each image takes 45% width */
+    max-width: 400px; /* Limit maximum image width */
+  }
+
+  .specials-image:nth-child(3) {
+    flex: 1 1 100%; /* Third image takes full width */
+  }
+}
+
+@media (max-width: 798px) {
+  .specials {
+    position: relative; /* Set position to relative */
+    right: 7.5%; /* Shift the element 5% to the right */
+  }
+  .specials-section {
+    padding: 10px; /* Adjusted padding for smaller screens */
+    align-items: center; /* Center items horizontally */
   }
 
   h1 {
@@ -219,14 +264,20 @@ button:hover {
   }
 
   .specials-images-container {
-    padding: 0 15px; /* Adjusted padding for smaller screens */
+    padding: 0; /* Remove padding for smaller screens */
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure images container takes full width */
   }
 
   .specials-image {
     margin: 20px 0; /* Space around each image */
     align-items: center; /* Center items horizontally */
+    width: 100%; /* Make images take full width */
+  }
+
+  .specials-image img {
+    max-width: 400px; /* Limit maximum image width */
   }
 }
 
@@ -324,4 +375,42 @@ button:hover {
   border-radius: 50%;
   margin: 0 20px;
   object-fit: cover;
+}
+
+@media (max-width: 1120px) {
+  .about {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+
+  .about-content {
+    margin-bottom: 30px; /* Add margin below text for spacing */
+  }
+
+  .about-content h4 {
+    font-size: 24px; /* Reduce font size for heading */
+  }
+
+  .about-content h5 {
+    font-size: 16px; /* Reduce font size for subheading */
+  }
+
+  .about-content p {
+    font-size: 14px; /* Reduce font size for paragraph */
+  }
+
+  .owners {
+    display: flex; /* Stack images horizontally */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    margin-top: 20px; /* Adjust margin to separate text and images */
+  }
+
+  #chefs,
+  #restaurant {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 10px; /* Adjust spacing between images */
+  }
 }

@@ -44,31 +44,33 @@ const HomePage = () => {
             <h1>Specials</h1>
             <button>Online Menu</button>
           </div>
-          <div className="specials-images-container">
-            <div className="specials-image">
-              <img src={catsalad} alt="Special 1" />
-              <div>
-                <h1>Bold Heading 1</h1>
-                <p>Description for Special 1</p>
-                <h2>Bold Heading 2</h2>
+          <div className="specials">
+            <div className="specials-images-container">
+              <div className="specials-image">
+                <img src={catsalad} alt="Special 1" />
+                <div>
+                  <h1>Bold Heading 1</h1>
+                  <p>Description for Special 1</p>
+                  <h2>Bold Heading 2</h2>
+                </div>
               </div>
-            </div>
 
-            <div className="specials-image">
-              <img src={bruschetta1} alt="Special 2" />
-              <div>
-                <h1>Bold Heading 1</h1>
-                <p>Description for Special 2</p>
-                <h2>Bold Heading 2</h2>
+              <div className="specials-image">
+                <img src={bruschetta1} alt="Special 2" />
+                <div>
+                  <h1>Bold Heading 1</h1>
+                  <p>Description for Special 2</p>
+                  <h2>Bold Heading 2</h2>
+                </div>
               </div>
-            </div>
 
-            <div className="specials-image">
-              <img src={creme} alt="Special 3" />
-              <div>
-                <h1>Bold Heading 1</h1>
-                <p>Description for Special 3</p>
-                <h2>Bold Heading 2</h2>
+              <div className="specials-image">
+                <img src={creme} alt="Special 3" />
+                <div>
+                  <h1>Bold Heading 1</h1>
+                  <p>Description for Special 3</p>
+                  <h2>Bold Heading 2</h2>
+                </div>
               </div>
             </div>
           </div>

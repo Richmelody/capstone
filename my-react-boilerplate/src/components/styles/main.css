@@ -1,56 +1,3 @@
-/* Responsive Styles */
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .hero-section-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the content vertically */
-    padding: 30px 0; /* Adjust padding for smaller screens */
-  }
-
-  .section-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center the text horizontally */
-  }
-
-  .section-left h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px; /* Add space between h1 and h2 */
-  }
-
-  .section-left h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px; /* Add space between h2 and p */
-  }
-
-  .section-left p {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Add space below the paragraph */
-  }
-
-  .btn {
-    margin-top: 10px; /* Adjust spacing for the button */
-  }
-
-  .section-right {
-    display: none; /* Hide the image on smaller screens */
-  }
-
-  /* Add more specific styles for smaller screens as needed */
-}
-/* Tablet Styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Add tablet-specific styles here */
-}
-
-/* Larger Screens Styles */
-@media (min-width: 1025px) {
-  /* Add larger screen-specific styles here */
-}
-
 /* Rest of the CSS */
 .hero-section-background {
   background-color: #495e57;
@@ -65,16 +12,17 @@
   margin: 0 auto;
   padding: 60px 0;
   color: #fff;
-  padding-bottom: 0px;
+  /* padding-bottom: 10px; */
 }
 
-/* .section-left {
+.section-left {
   width: 100%;
-} */
+  margin-top: -20px;
+}
 
 .section-left h1 {
   color: #f4ce14;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: -1rem;
   line-height: 0.8;
   font-size: 4rem;
@@ -131,6 +79,52 @@
   margin-right: 90px;
 }
 
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 1120px) {
+  .hero-section-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Adjust spacing for smaller screens */
+  }
+
+  .section-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px; /* Add space between h1 and h2 */
+  }
+
+  .section-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Add space between h2 and p */
+  }
+
+  .section-left p {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add space below the paragraph */
+  }
+
+  .btn {
+    margin-top: 10px; /* Adjust spacing for the button */
+  }
+
+  .section-right {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+
+/* Specials Section Styles */
 .specials-section {
   border-radius: 10px; /* Softened edges */
   padding: 200px; /* Spacing for content */
@@ -211,6 +205,29 @@ button:hover {
   color: #4caf50; /* Green secondary heading */
   font-size: 16px; /* Emphasis */
   margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 1120px) {
+  .specials-section {
+    padding: 30px; /* Adjusted padding for smaller screens */
+    align-items: flex-start; /* Align items to the start of the flex container */
+  }
+
+  h1 {
+    font-size: 32px; /* Reduced font size for smaller screens */
+  }
+
+  .specials-images-container {
+    padding: 0 15px; /* Adjusted padding for smaller screens */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .specials-image {
+    margin: 20px 0; /* Space around each image */
+    align-items: center; /* Center items horizontally */
+  }
 }
 
 /* Testimonials Section Styles */

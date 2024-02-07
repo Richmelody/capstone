@@ -1,5 +1,6 @@
 /* Updated styles for navbar */
 .navbar-container {
+  position: relative; /* Set position to relative */
   margin-left: auto;
   margin-right: 5%;
   margin-top: -5px; /* Adjust the top margin to push it up */
@@ -42,6 +43,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  margin-top: -15px; /* Adjust the top margin to push it up */
 }
 
 /* Mobile styles */
@@ -58,6 +60,14 @@
   .navbar-nav-links {
     display: none; /* Initially hide the navigation links */
     flex-direction: column;
+    position: absolute; /* Set position to absolute */
+    top: 70px; /* Adjust the top position to avoid overlapping with other content */
+    left: -50%; /* Adjust the left position to align with the container */
+    background-color: #ffffff; /* Set background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Add border radius for a classy look */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    z-index: 999; /* Set a high z-index */
   }
 
   .navbar-nav-links.active {
@@ -66,6 +76,6 @@
 
   .navbar-nav-links li {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 }
